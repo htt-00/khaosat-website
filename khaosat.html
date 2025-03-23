@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students' Future Jobs Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Students' Future Jobs Survey</h2>
+
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="job">Future Job Choice:</label>
+            <select id="job" name="job">
+                <option value="Surgeon">Surgeon</option>
+                <option value="Airline Pilot">Airline Pilot</option>
+                <option value="Nurse">Nurse</option>
+                <option value="Shop Assistant">Shop Assistant</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="reason">Why did you choose this job?</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+
+            <label for="factors">Factors influencing your choice:</label>
+            <input type="checkbox" name="factor" value="Salary"> Salary <br>
+            <input type="checkbox" name="factor" value="Passion"> Passion <br>
+            <input type="checkbox" name="factor" value="Family"> Family <br>
+            <input type="checkbox" name="factor" value="Job Market"> Job Market <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
